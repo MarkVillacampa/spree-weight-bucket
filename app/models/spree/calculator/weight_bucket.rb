@@ -6,6 +6,8 @@ module Spree
     preference :min_price, :string, :default => '50'
     preference :max_price, :string, :default => '10000000'
 
+    attr_accessible :preferred_weight_table, :preferred_price_table, :preferred_default_weight, :preferred_min_price, :preferred_max_price
+
     def self.description
       "Weight buckets"
     end
